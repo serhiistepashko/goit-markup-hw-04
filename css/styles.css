@@ -1,4 +1,5 @@
-/* спочатку йдуть властивості для index.html потім для portfolio.html починаючи зі строки 352 */
+/* спочатку йдуть властивості стилів для index.html, потім для portfolio.html починаючи зі строки 352 */
+/* хедер та футер  для всіх файлів */
 
 *,
 *::before,
@@ -132,6 +133,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 /* секція hero(далі герой) (мейн) */
 .hero {
   background-color: var(--banner-color);
+  background-image: url(../images/bckg-hero.jpg);
   color: var(--white-color);
   margin-top: 0;
   max-width: 1600px;
