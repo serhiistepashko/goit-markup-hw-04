@@ -20,7 +20,8 @@
   --border-card-color: #eee;
   --main-font-family: "Roboto", sans-serif;
   --additional-font-family: "Raleway", sans-serif;
-  --bckgrnd-over-color: rgba(47, 48, 58, 0.4)
+  --bckgrnd-over-color: rgba(47, 48, 58, 0.4);
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -42,6 +43,15 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .changes-section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+/* стилі заголовку h2 */
+.second-lvl-title {
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .container {
@@ -220,13 +230,13 @@ background-color: var(--btnhover-color);
 }
 
 /* заголовок h2 секції "what-we-do"(мейн) */
-.what-we-do-heading {
+/* .what-we-do-heading {
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 50px;
-}
+} */
 
 /* список секції "what-we-do"(мейн) */
 .what-we-do-list {
@@ -241,13 +251,13 @@ background-color: var(--btnhover-color);
 }
 
 /* заголовок h2 секції "our-team" (мейн) */
-.our-team-heading {
+/* .our-team-heading {
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.03;
   text-align: center;
   margin-bottom: 50px;
-}
+} */
 
 /* список секції "our-team"(мейн) */
 .our-team-list {
@@ -284,6 +294,24 @@ background-color: var(--btnhover-color);
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
+}
+
+/* секція з класом "regular-customers" */
+
+/* список секції "regular-customers" */
+.regular-customers-list {
+  display: flex;
+  gap: 30px;
+}
+
+/* елементи списк секції "regular-customers" */
+
+.regular-customers-item {
+  width: 170px;
+  height: 92px;
+  background-color: var(--bckgrnd-icon-color);
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
 }
 
 /* клас тегу footer */
