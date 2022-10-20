@@ -22,6 +22,7 @@
   --additional-font-family: "Raleway", sans-serif;
   --bckgrnd-over-color: rgba(47, 48, 58, 0.4);
   --icon-color: #afb1b8;
+  --bckgrnd-soc-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -54,6 +55,14 @@ h1, h2, h3, h4, h5, h6, p, ul {
   margin-bottom: 50px;
 }
 
+.third-lvl-title {
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
 .container {
   max-width: 1200px;
   margin-right: auto;
@@ -83,6 +92,20 @@ h1, h2, h3, h4, h5, h6, p, ul {
   display: flex;
   margin-left: auto;
   gap: 30px;
+}
+
+.link-contacts-icon {
+  margin-right: 10px;
+  fill: var(--secondary-color);
+}
+
+.link-contact {
+  display: flex;
+  align-items: center;
+}
+
+.link:hover .link-contacts-icon {
+  fill: var(--bluelite-color);
 }
 
 /* приховані заголовоки */
@@ -119,6 +142,8 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 /* елементи списку навігації та списку з email та tel (хедер) */
 .link {
+  /* display: flex;
+  align-items: center; */
   font-size: 14px;
   font-weight: 500;
   line-height: 1.1;
@@ -206,14 +231,25 @@ background-color: var(--btnhover-color);
   gap: 30px;
 }
 
+.advantages-list-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: var(--bckgrnd-color);
+  margin-bottom: 30px;
+}
+
 /* заголовок h3 в елементах списку секціїї advantages (мейн) */
-.points {
+/* .points {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
- }
+ } */
 
  /* абзац p в елементах списку секціїї advantages (мейн) */
 .description {
@@ -296,6 +332,42 @@ background-color: var(--btnhover-color);
     color: var(--secondary-color);
 }
 
+.soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.soc-list-link{
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.soc-icon {
+  fill: var(--icon-color);
+}
+
+.soc-list-link:hover {
+  background-color: var(--bluelite-color);
+}
+
+.soc-list-link:focus {
+  background-color: var(--bluelite-color);
+}
+
+.soc-list-link:hover .soc-icon {
+  fill: var(--white-color);
+}
+
+.soc-list-link:focus .soc-icon {
+  fill: var(--white-color);
+}
+
 /* секція з класом "regular-customers" */
 
 /* список секції "regular-customers" */
@@ -304,9 +376,12 @@ background-color: var(--btnhover-color);
   gap: 30px;
 }
 
-/* елементи списк секції "regular-customers" */
+/* елементи списку секції "regular-customers" поссилання */
 
-.regular-customers-item {
+.regular-customer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   background-color: var(--bckgrnd-icon-color);
@@ -314,9 +389,38 @@ background-color: var(--btnhover-color);
   border-radius: 4px;
 }
 
+.customer-logo {
+  fill: var(--icon-color);
+}
+
+.regular-customer-link:hover {
+  border-color: var(--bluelite-color);
+}
+
+.regular-customer-link:focus {
+  border-color: var(--bluelite-color);
+}
+
+.regular-customer-link:hover .customer-logo {
+  fill: var(--bluelite-color);
+}
+
+.regular-customer-link:focus .customer-logo {
+  fill: var(--bluelite-color);
+}
+
 /* клас тегу footer */
 .page-footer {
   background-color: var(--banner-color);
+}
+
+.change-style-footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.join-footer {
+  margin-left: 70px;
 }
 
 /* посилання логотип у футері */
@@ -378,6 +482,18 @@ background-color: var(--btnhover-color);
   color: var(--bluelite-color);
 }
 
+.join {
+  color: var(--white-color);
+}
+
+.sc-lnk-footer {
+  background-color: var(--bckgrnd-soc-color);
+}
+
+.soc-icon-footer {
+  fill: var(--white-color);
+}
+
 
 /* Властивості стилів прописані вище для файлу index.html.
 Крім властивостей хедеру та футеру, а також: "div class="container""
@@ -433,6 +549,10 @@ background-color: var(--btnhover-color);
   background-color: var(--white-color);
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.portfolio-list-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* кожний третій елемент списку секції з класом "portfolio"(мейн) */
